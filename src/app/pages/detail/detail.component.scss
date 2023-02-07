@@ -1,0 +1,35 @@
+.detail {
+  padding: 1rem;
+
+  &-container {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &-image {
+    height: 25rem;
+    max-width: 100%;
+    object-position: center;
+  }
+
+  &-summary {
+    padding: 1rem;
+
+    &--title {
+      font-weight: bold;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .detail {
+    padding: inherit;
+
+    &-container {
+      display: block;
+    }
+  }
+}

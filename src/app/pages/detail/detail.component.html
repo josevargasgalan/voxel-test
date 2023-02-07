@@ -1,1 +1,27 @@
-<p>detail works!</p>
+<div class="detail">
+  <button mat-button (click)="backToHomePage()">
+    <mat-icon aria-hidden="false" aria-label="Icon" fontIcon="arrow_back"></mat-icon>
+    Back
+  </button>
+  <div class="detail-container">
+      <img class="detail-image" [src]="tvShow.image.medium" alt="image">
+      <div class="detail-summary">
+        <p class="detail-summary--title">{{tvShow.name}}</p>
+        <div>{{tvShow.summary}}</div>
+        <ng-container *ngIf="tvShow.genres!.length > 0">
+          <p class="detail-summary--title">Genres</p>
+          <mat-chip-set
+            cdkDropListOrientation="horizontal">
+            <mat-chip
+              *ngFor="let genre of tvShow.genres">
+                {{genre}}
+            </mat-chip>
+        </mat-chip-set>
+        </ng-container>
+        <ng-container *ngIf="tvShow.rating.average">
+          <p class="detail-summary--title">Average</p>
+          <app-average [average]="tvShow.rating.average"></app-average>
+        </ng-container>
+      </div>
+  </div>
+</div>
