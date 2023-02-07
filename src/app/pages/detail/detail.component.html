@@ -10,13 +10,7 @@
         <div>{{tvShow.summary}}</div>
         <ng-container *ngIf="tvShow.genres!.length > 0">
           <p class="detail-summary--title">Genres</p>
-          <mat-chip-set
-            cdkDropListOrientation="horizontal">
-            <mat-chip
-              *ngFor="let genre of tvShow.genres">
-                {{genre}}
-            </mat-chip>
-        </mat-chip-set>
+        <app-chips-list [chipsList]="tvShow.genres!"></app-chips-list>
         </ng-container>
         <ng-container *ngIf="tvShow.rating.average">
           <p class="detail-summary--title">Average</p>

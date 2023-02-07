@@ -6,6 +6,7 @@ import { Route, RouterModule } from '@angular/router';
 import { MatChipsModule } from '@angular/material/chips'
 import { CommonModule } from '@angular/common';
 import { AverageComponent } from 'src/app/components/average/average.component';
+import { ChipsListComponent } from 'src/app/components/chips-list/chips-list.component';
 
 const routes: Route[] = [{
   path: '',
@@ -15,7 +16,8 @@ const routes: Route[] = [{
 @NgModule({
   declarations: [
     DetailComponent,
-    AverageComponent
+    AverageComponent,
+    ChipsListComponent
   ],
   imports: [
     CommonModule,
