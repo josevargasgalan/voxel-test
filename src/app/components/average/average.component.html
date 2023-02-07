@@ -1,0 +1,7 @@
+<div class="average">
+  <div class="stars-container">
+    <mat-icon *ngFor= "let i of numberOfStars" aria-hidden="true" aria-label="Icon" fontIcon="star"></mat-icon>
+    <mat-icon [style]="{width: lastStarWidth}" aria-hidden="true" aria-label="Icon" fontIcon="star"></mat-icon>
+  </div>
+  <div class="average-number">{{average}}</div>
+</div>
