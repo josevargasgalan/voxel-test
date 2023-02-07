@@ -1,0 +1,9 @@
+<mat-card class="card" (click)="launchClickAction()">
+  <mat-card-header>
+    <mat-card-title class="card-title">{{ cardInfo.title }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image class="card-image" [src]="cardInfo.image" alt="Image">
+  <mat-card-content class="card-content">
+    {{ cardInfo.content }}
+  </mat-card-content>
+</mat-card>

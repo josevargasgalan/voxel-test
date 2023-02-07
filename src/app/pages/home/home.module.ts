@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home.component';
+import { MatCardModule } from '@angular/material/card';
+import { CardComponent } from '../../components/card/card.component';
 import { Route, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -10,10 +12,12 @@ const routes: Route[] = [{
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    CardComponent,
   ],
   imports: [
     CommonModule,
+    MatCardModule,
     RouterModule.forChild(routes)
   ],
   providers: []

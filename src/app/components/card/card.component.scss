@@ -1,0 +1,19 @@
+.card {
+
+  cursor: pointer;
+
+  &-title {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  &-content {
+    padding-top: 1rem;
+  }
+
+  img {
+    max-height: 25rem;
+    object-fit: cover;
+    object-position: center;
+  }
+}
