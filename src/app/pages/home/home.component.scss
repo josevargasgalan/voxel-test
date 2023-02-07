@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 2rem;
+  gap: 1rem;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  app-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  app-card {
+    width: 30%;
+  }
+}
+
