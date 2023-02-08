@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { ChipsListComponent } from './chips-list.component';
 
@@ -8,7 +9,8 @@ describe('ChipsListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChipsListComponent ]
+      declarations: [ ChipsListComponent ],
+      imports: [ MatChipsModule ]
     })
     .compileComponents();
 

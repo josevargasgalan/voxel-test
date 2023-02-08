@@ -20,7 +20,7 @@ export class HomeComponent {
     })
   }
 
-  getCardInfo(tvShow: TVShowDetail): CardInfo {
+  public getCardInfo(tvShow: TVShowDetail): CardInfo {
     return {
       title: tvShow.name,
       image: tvShow.image.medium,
