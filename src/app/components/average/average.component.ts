@@ -19,7 +19,7 @@ export class AverageComponent {
   }
 
   private getLastStarWidth(fullNumber: number, truncedNumber: number): string {
-    return 2.4 * ((fullNumber - truncedNumber) * 10) + 'px';
+    return (2.4 * ((fullNumber - truncedNumber) * 10)).toFixed(1) + 'px';
   }
 
   private getNumberOfStars(startsNumber: number): never[] {
